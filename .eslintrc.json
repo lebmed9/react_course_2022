@@ -10,7 +10,7 @@
       "jsx": true
     },
     "ecmaVersion": "latest",
-    "sourceType": "module" 1
+    "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
   //   "settings": {
