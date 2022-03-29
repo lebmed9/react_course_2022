@@ -10,20 +10,17 @@ const NameComponent = (props: NameComponentPropsType) => {
   const handler = (event: SyntheticEvent) => {
     console.log(event.currentTarget, 'currentTarget');
     console.log(event.target, 'target');
-  };
 
-  const mainHandler = (event: SyntheticEvent) => {
-    console.log(event.currentTarget, 'currentTarget');
-    console.log(event.target, 'target');
+  // const mainHandler = (event: SyntheticEvent) => {
+  //   console.log(event.currentTarget, 'currentTarget');
+  //   console.log(event.target, 'target');
   };
 
   return (
-    <div role="presentation" onClick={mainHandler} className="name_wrapper">
+    <div className="name_wrapper">
       <p>{firstName}</p>
       <p>{lastName}</p>
-      <button type="button" onClick={handler}>
-        CLICK ME
-      </button>
+      <button type="button">click me</button>
     </div>
   );
 };

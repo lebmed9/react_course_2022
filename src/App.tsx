@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import Counter from './Counter';
-import Form from './Form';
-import Input from './Input';
 import NameComponent from './NameComponent';
+import Form from './Form';
 import logo from './logo512.png';
 
 const App = () => (
@@ -13,18 +12,17 @@ const App = () => (
     <Counter title="Апельсин" />
     <Counter title="Ананас" />
     <Form title="Auth">
-      <Input />
-      <Input />
+      <input />
+      <input />
     </Form>
     <Form title="Reg">
-      <Input />
-      <Input />
-      <Input />
-      <Input />
+      <input />
+      <input />
     </Form>
     <img src={logo} alt="test" />
     <img src="/image/logo192.png" alt="test2" />
   </div>
+
 );
 
 export default App;
