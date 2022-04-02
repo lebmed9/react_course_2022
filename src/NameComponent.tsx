@@ -20,8 +20,6 @@ const NameComponent = (props: NameComponentPropsType) => {
     <div className="name_wrapper">
       <p>{firstName}</p>
       <p>{lastName}</p>
-      dfdf
-      dfdf
       <button type="button">click me</button>
     </div>
   );

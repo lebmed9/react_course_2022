@@ -18,7 +18,6 @@ const App = () => (
     <Form title="Reg">
       <input />
       <input />
-      <input />
     </Form>
     <img src={logo} alt="test" />
     <img src="/image/logo192.png" alt="test2" />
