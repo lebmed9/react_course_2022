@@ -21,6 +21,7 @@ const NameComponent = (props: NameComponentPropsType) => {
       <p>{firstName}</p>
       <p>{lastName}</p>
       <button type="button">click me</button>
+      <textarea />
     </div>
   );
 };
