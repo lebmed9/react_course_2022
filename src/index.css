@@ -10,9 +10,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.form_inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 60px;
+.text{
+  color: aqua;
+  font-size: 30px;
+}
+
+.wrapper {
+  padding: 50px;
+  background-color: brown;
 }

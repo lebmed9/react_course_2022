@@ -1,29 +1,10 @@
-import React, { SyntheticEvent } from 'react';
+import React from 'react';
 
-type NameComponentPropsType = {
-  firstName: string;
-  lastName: string;
-};
-
-const NameComponent = (props: NameComponentPropsType) => {
-  const { firstName, lastName } = props;
-  const handler = (event: SyntheticEvent) => {
-    console.log(event.currentTarget, 'currentTarget');
-    console.log(event.target, 'target');
-
-  // const mainHandler = (event: SyntheticEvent) => {
-  //   console.log(event.currentTarget, 'currentTarget');
-  //   console.log(event.target, 'target');
-  };
-
-  return (
-    <div className="name_wrapper">
-      <p>{firstName}</p>
-      <p>{lastName}</p>
-      <button type="button">click me</button>
-      <textarea />
-    </div>
-  );
-};
+const NameComponent = () => (
+  <div className="wrapper">
+    <p className="text">Alex</p>
+    <p className="text">Shirikov</p>
+  </div>
+);
 
 export default NameComponent;
