@@ -6,8 +6,9 @@
   align-items: center;
 }
 
-/* .name_wrapper {
+.form_inputs {
   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+}
