@@ -6,9 +6,15 @@
   align-items: center;
 }
 
-.form_inputs {
+/* .form_inputs {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 60px;
+} */
+
+.itemImage {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
 }
