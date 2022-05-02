@@ -1,13 +1,17 @@
 import React from 'react';
-import './App.css';
-import Main from './Containers/Main';
-import Auth from './Containers/Auth';
+import MainContainer from './containers/MainContainer';
+import AuthContainer from './containers/AuthContainer';
+import RegistrationContainer from './containers/RegistrationContainer';
 
-const App = () => (
-  <div className="wrapper">
-    <Main />
-    <Auth />
-  </div>
-);
+const App = () => {
+  console.log('APP => start');
+  return (
+    <>
+      <MainContainer />
+      <AuthContainer />
+      <RegistrationContainer />
+    </>
+  );
+};
 
 export default App;

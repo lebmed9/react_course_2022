@@ -1,11 +1,6 @@
 import React from 'react';
+import MainPage from '../../components/pages/MainPage';
 
-const Main = () => {
-  return (
-    <div>
-      <h1>MAIN</h1>
-    </div>
-  );
-};
+const MainContainer = () => <MainPage />;
 
-export default Main;
+export default MainContainer;
