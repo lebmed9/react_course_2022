@@ -1,5 +1,5 @@
 import React from 'react';
-import MainContainer from './containers/MainContainer';
+// import MainContainer from './containers/MainContainer';
 import AuthContainer from './containers/AuthContainer';
 import RegistrationContainer from './containers/RegistrationContainer';
 
@@ -9,7 +9,7 @@ const App = () => {
     <>
       {/* <MainContainer /> */}
       <AuthContainer />
-      {/* <RegistrationContainer /> */}
+      <RegistrationContainer />
     </>
   );
 };

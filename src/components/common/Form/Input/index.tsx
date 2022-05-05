@@ -1,20 +1,19 @@
-import React, { ChangeEvent, SyntheticEvent } from 'react';
+import React, { ChangeEvent } from 'react';
 import style from './Input.module.scss';
 
 type InputPropsType = {
   title: string;
   id: string;
   placeholder: string;
+  type?: 'text' | 'password';
   value: string;
   setValue: React.Dispatch<React.SetStateAction<string>>;
-  type: 'text' | 'password';
 };
 
+// eslint-disable-next-line object-curly-newline
 const Input = ({ title, id, placeholder, value, setValue, type }: InputPropsType) => {
   const handler = (event: ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
-
-    // setValue();
   };
 
   return (
@@ -24,4 +23,5 @@ const Input = ({ title, id, placeholder, value, setValue, type }: InputPropsType
     </label>
   );
 };
+
 export default Input;

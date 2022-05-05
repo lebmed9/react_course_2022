@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Button from '../../common/Button';
 import Form from '../../common/Form';
 import Input from '../../common/Form/Input';
 import PageWrapper from '../../common/PageWrapper';
 
 const AuthPage = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const submitHeandler = () => {
-    console.log({ email, password });
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+
+  const submitHandler = () => {
+    console.log(email, password);
   };
 
   return (
@@ -30,7 +31,7 @@ const AuthPage = () => {
           setValue={setPassword}
           type="password"
         />
-        <Button title="Войти" onClick={submitHeandler} />
+        <Button title="Войти" onClick={submitHandler} />
       </Form>
     </PageWrapper>
   );
