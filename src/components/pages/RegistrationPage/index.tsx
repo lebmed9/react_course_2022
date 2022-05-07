@@ -6,13 +6,13 @@ import PageWrapper from '../../common/PageWrapper';
 
 const RegistrationPage = () => (
   <PageWrapper>
-    {/* <Form title="Регистрация">
+    <Form title="Регистрация">
       <Input title="Name" id="name" placeholder="Введите имя" />
       <Input title="Email" id="email" placeholder="Введите почту" />
       <Input title="Password" id="password" placeholder="Введите пароль" />
       <Input title="Repeat Password" id="repeatPassword" placeholder="Повторите пароль" />
       <Button title="Регистрация" onClick={() => console.log('registration')} />
-    </Form> */}
+    </Form>
   </PageWrapper>
 );
 
