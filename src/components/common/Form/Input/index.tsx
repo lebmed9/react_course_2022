@@ -5,17 +5,15 @@ type InputPropsType = {
   title: string;
   id: string;
   placeholder: string;
-  type?: 'text' | 'password';
   value: string;
   setValue: React.Dispatch<React.SetStateAction<string>>;
+  type?: 'text' | 'password';
 };
 
-// eslint-disable-next-line object-curly-newline
-const Input = ({ title, id, placeholder, value, setValue, type }: InputPropsType) => {
+const Input = ({ title, id, placeholder, value, setValue, type = 'text' }: InputPropsType) => {
   const handler = (event: ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
   };
-
   return (
     <label className={style.wrapper} htmlFor={id}>
       <span>{title}</span>
