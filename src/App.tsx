@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import MainContainer from './containers/MainContainer';
-// import RegistrationContainer from './containers/RegistrationContainer';
+import RegistrationContainer from './containers/RegistrationContainer';
 import AuthContainer from './containers/AuthContainer';
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
     <>
       <MainContainer />
       <AuthContainer />
-      {/* <RegistrationContainer /> */}
+      <RegistrationContainer />
     </>
   );
 };
